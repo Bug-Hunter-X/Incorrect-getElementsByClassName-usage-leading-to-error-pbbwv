@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+
+  <script>
+    let elements = document.getElementsByClassName('myClass');
+    
+    if (elements.length > 0) {
+      elements[0].innerHTML = "This text is now added";
+    } else {
+      console.log("Element with class 'myClass' not found.");
+    }
+  </script>
+</body>
+</html>
